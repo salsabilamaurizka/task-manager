@@ -54,7 +54,7 @@
 .list {
   width: 90%;
   margin: auto;
-  max-height: 170px;
+  height: 140px;
   overflow: hidden;
   overflow-y: auto;
 }
@@ -93,6 +93,7 @@
 
 .buttons {
   display: flex;
+  margin-top: 20px;
 }
 
 .btn {
@@ -160,10 +161,11 @@
 }
 
 .no-tasks {
-  color: #fff;
+  color: #999;
   text-align: center;
   font-size: 18px;
   margin-top: 20px;
+  height: 140px;
 }
 
 .task-title {
