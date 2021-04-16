@@ -1,0 +1,22 @@
+.card-container,
+.card-panel {
+  padding: 0.01em 16px;
+  margin-top: 0px;
+}
+
+.card-leftbar {
+  border-left: 6px solid #ccc !important;
+}
+
+.card-panel {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.card-light-grey {
+  color: #000;
+}
+
+.dark .card-light-grey {
+  color: #fff;
+}
