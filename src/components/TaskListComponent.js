@@ -14,7 +14,9 @@ const TaskListComponent = () => {
           })}
         </ul>
       ) : (
-        <div className="no-tasks">No Tasks</div>
+        <div className="no-tasks">
+          <p>No Tasks</p>
+        </div>
       )}
     </div>
   );
