@@ -4,9 +4,7 @@ const Quote = () => {
   const [quote, setQuote] = useState({ content: "", author: "" });
 
   const loadData = async () => {
-    const response = await fetch(
-      "https://api.quotable.io/random?maxLength=100"
-    );
+    const response = await fetch("https://api.quotable.io/random?maxLength=80");
     if (response.status === 200) {
       const data = await response.json();
       setQuote({
