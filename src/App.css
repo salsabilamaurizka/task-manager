@@ -59,7 +59,7 @@
 .list {
   width: 90%;
   margin: auto;
-  max-height: 140px;
+  height: 140px;
   overflow: hidden;
   overflow-y: auto;
 }
