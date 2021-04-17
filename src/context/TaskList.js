@@ -25,7 +25,9 @@ const TaskListProvider = (props) => {
 
   // Add tasks
   const addTask = (title) => {
-    setTasks([...tasks, { isChecked: false, title, id: uuid() }]);
+    if (/\S/.test(title)) {
+      setTasks([...tasks, { isChecked: false, title, id: uuid() }]);
+    }
   };
 
   // Remove tasks
@@ -39,7 +41,7 @@ const TaskListProvider = (props) => {
   };
 
   // Find task
-  const findItem = (id) => {
+  const findTask = (id) => {
     const item = tasks.find((task) => task.id === id);
 
     setEditItem(item);
@@ -57,6 +59,11 @@ const TaskListProvider = (props) => {
     setEditItem(null);
   };
 
+  // Cancel edit
+  const cancelEditTask = () => {
+    setEditItem(null);
+  };
+
   return (
     <TaskList.Provider
       value={{
@@ -64,9 +71,10 @@ const TaskListProvider = (props) => {
         addTask,
         removeTask,
         clearList,
-        findItem,
+        findTask,
         editTask,
         editItem,
+        cancelEditTask,
         checkTask,
       }}
     >

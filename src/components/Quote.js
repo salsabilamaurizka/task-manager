@@ -26,9 +26,9 @@ const Quote = () => {
   }, []);
 
   return (
-    <div class="card-container">
-      <div class="card-panel card-leftbar card-light-grey">
-        <p class="quotes">
+    <div className="card-container">
+      <div className="card-panel card-leftbar card-light-grey">
+        <p className="quotes">
           <i>{quote.content}</i>
         </p>
         <h4>-{quote.author}</h4>

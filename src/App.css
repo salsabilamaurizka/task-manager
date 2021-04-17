@@ -18,13 +18,18 @@
 
 .app-wrapper {
   background-color: #fafafa;
-  width: 25%;
-  min-width: 450px;
+  width: 450px;
   height: 600px;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 400px) {
+  .app-wrapper {
+    width: 360px;
+  }
 }
 
 .header h1 {
@@ -54,7 +59,7 @@
 .list {
   width: 90%;
   margin: auto;
-  height: 140px;
+  max-height: 140px;
   overflow: hidden;
   overflow-y: auto;
 }
@@ -77,8 +82,7 @@
 }
 
 .task-input {
-  width: 350px;
-  min-width: 250px;
+  min-width: 300px;
   padding: 15px 10px 10px 20px;
   margin-right: 10px;
   font-family: "Josefin Sans", serif;
@@ -98,10 +102,8 @@
 
 .btn {
   margin: 10px;
-}
-
-.add-task-btn {
   min-width: 100px;
+  padding: 10px;
   background-color: #f0a4ab;
   color: #444;
   border: none;
@@ -144,20 +146,6 @@
   font-size: 16px;
   color: #bbb;
   margin-right: 20px;
-}
-
-.clear-btn {
-  width: 100px;
-  height: 35px;
-  background-color: #f0a4ab;
-  color: #444;
-  border: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  border-radius: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  outline: none;
-  cursor: pointer;
 }
 
 .no-tasks {
@@ -211,14 +199,7 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.dark .add-task-btn {
-  min-width: 100px;
-  background-color: #845ec2;
-  color: #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.dark .clear-btn {
+.dark .btn {
   background-color: #845ec2;
   color: #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);

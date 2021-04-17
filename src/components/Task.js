@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { TaskList } from "../context/TaskList";
 
 const Task = ({ task }) => {
-  const { removeTask, findItem, checkTask } = useContext(TaskList);
+  const { removeTask, findTask, checkTask } = useContext(TaskList);
   const titleLineThrough = task.isChecked ? "task-title" : "";
 
   return (
@@ -22,7 +22,7 @@ const Task = ({ task }) => {
         >
           <i className="fas fa-trash-alt"></i>
         </button>{" "}
-        <button className="btn-edit task-btn" onClick={() => findItem(task.id)}>
+        <button className="btn-edit task-btn" onClick={() => findTask(task.id)}>
           <i className="fas fa-pen"></i>
         </button>
       </div>
