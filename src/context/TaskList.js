@@ -12,8 +12,6 @@ const TaskListProvider = (props) => {
       task.id === id ? { ...task, isChecked } : task
     );
 
-    console.log(newTasks);
-
     setTasks(newTasks);
   };
 
@@ -50,10 +48,8 @@ const TaskListProvider = (props) => {
   // Edit task
   const editTask = (title, id) => {
     const newTasks = tasks.map((task) =>
-      task.id === id ? { title, id } : task
+      task.id === id ? { ...task, title } : task
     );
-
-    console.log(newTasks);
 
     setTasks(newTasks);
     setEditItem(null);

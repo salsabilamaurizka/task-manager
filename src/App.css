@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .container {
   background: #f0a4ab;
   width: 100%;
@@ -37,7 +41,6 @@
   font-weight: 300;
   text-align: center;
   margin: 30px 20px 40px 20px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .main {
@@ -107,7 +110,6 @@
   background-color: #f0a4ab;
   color: #444;
   border: none;
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -136,13 +138,7 @@
   outline: none;
 }
 
-.btn-delete i {
-  font-size: 16px;
-  color: #bbb;
-  margin-right: 20px;
-}
-
-.btn-edit i {
+.task-btn i {
   font-size: 16px;
   color: #bbb;
   margin-right: 20px;
@@ -167,6 +163,34 @@
   align-items: center;
   max-width: 80%;
   word-wrap: break-word;
+}
+
+.task-edit {
+  padding: 15px 10px 10px 20px;
+  margin-right: 10px;
+  width: 200px;
+  font-size: 15px;
+  color: #777;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-edit-task i {
+  font-size: 18px;
+  margin-right: 23px;
+}
+
+.btn-cancel-edit i {
+  font-size: 19px;
+}
+
+.edit-btn {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .dark .container {
