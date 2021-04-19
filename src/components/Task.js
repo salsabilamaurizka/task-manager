@@ -31,7 +31,6 @@ const Task = ({ task }) => {
     if (editItem) {
       setShowEditForm(editItem.id === task.id);
       setTitle(editItem.title);
-      console.log(editItem);
     } else {
       setShowEditForm(false);
       setTitle("");
